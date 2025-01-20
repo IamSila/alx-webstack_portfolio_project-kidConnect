@@ -123,7 +123,17 @@
         background-color: red;
         color: #fff;
     }
+
+    .gen-details {
+      background-color: green;
+      color: white;
+      margin-top: 20px;
+      border-radius: 5px;
       
+    }
+      .gen-details:hover {
+        transform: scale(1.15);
+      }
       /* Responsive Design */
     @media (max-width: 768px) {
         .report-card {

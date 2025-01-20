@@ -29,7 +29,7 @@
         {% else %}
         <p class="report-status report-missing">Status: {{reportedChild.status}} </p>
         {%endif%}
-        <a href=""><p>generate details</p></a>
+        <a href="{% url 'generateDetails' reportedChild.id %}"><p class="gen-details">generate details</p></a>
       </div>
     </div>
     
