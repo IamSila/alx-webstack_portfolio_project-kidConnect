@@ -14,5 +14,6 @@ urlpatterns = [
     path('customAdmin/', views.customAdmin, name="customAdmin"),
     path('customAdmin/update/<str:id>', views.updateDetails, name="update"),
     path('customAdmin/delete/<str:id>', views.delete, name="delete"),
-    path('generateDetails/<str:id>', views.generateDetails, name="generateDetails")
+    path('generateDetails/<str:id>', views.generateDetails, name="generateDetails"),
+    path('evidence/<str:id>', views.evidence, name="evidence"),
 ]

@@ -168,3 +168,7 @@ def generateDetails(request, id):
 
     return render(request, 'generateDetails.html', context)
 
+def evidence(request, id):
+    child = Report.objects.get(id=id)
+    context = {"child":child}
+    return render(request, 'evidence.html', context)

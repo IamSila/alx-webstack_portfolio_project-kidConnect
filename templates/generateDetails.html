@@ -17,12 +17,13 @@
                     Your assistance is greatly appreciated.</i></p>
     
             </div>
-    
+            
             <div class="generated-content-nav">
                 <button><a href="{% url 'reportedChildren' %}">back</a></button>
                 <button><a href="mailto:{{email}}">contact parent</a></button>
-                <button><a href="">seen this person? submit EVIDENCE here</a></button>
+                <button><a href="{% url 'evidence' reportedChild.id %}">seen this person? submit EVIDENCE here</a></button>
             </div>
+            
         </div>
     </div>
 {% endblock body %}

@@ -19,3 +19,13 @@ class Report(models.Model):
     def __str__(self):
         """label of each object of the above class"""
         return f"{self.firstName } {self.lastName}"
+    
+#evidence model
+class Evidence(models.Model):
+    first_name = models.CharField(max_length=256)
+    last_name = models.CharField(max_length=256)
+    description = models.TextField()
+    location = models.CharField(max_length=256)
+    date = models.DateField()
+    contact = models.IntegerField()
+    child_photo = models.ImageField(upload_to='media/evidence')
