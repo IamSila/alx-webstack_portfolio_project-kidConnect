@@ -16,4 +16,6 @@ urlpatterns = [
     path('customAdmin/delete/<str:id>', views.delete, name="delete"),
     path('generateDetails/<str:id>', views.generateDetails, name="generateDetails"),
     path('evidence/<str:id>', views.evidence, name="evidence"),
+    path('notifications/<str:id>', views.notifications, name="notifications"),
+    
 ]

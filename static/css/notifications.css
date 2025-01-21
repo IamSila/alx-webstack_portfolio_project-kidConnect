@@ -3,3 +3,22 @@
     display: flex;
     justify-content: center;
 }
+
+
+.notification {
+    border: 2px solid #f7b662;
+    background: linear-gradient(rgba(100,100,100,0.1), rgba(0,0,0,0.1));
+    margin: 20px;
+    border-radius: 5px;
+
+}
+
+
+.notification-container > .notification > p {
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    margin: 10px;
+    border-radius: 5px;
+
+}

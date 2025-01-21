@@ -188,3 +188,7 @@ def evidence(request, id):
                                date=date, contact=contact, child_photo=child_photo)
         newEvidence.save()
     return render(request, 'evidence.html')
+
+
+def notifications(request, id):
+    return render(request, 'notifications.html')
