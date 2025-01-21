@@ -6,7 +6,7 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 #import models here
-from .models import Report
+from .models import Report, Evidence
 
 # Create your views here.
 # def base(request):
@@ -76,6 +76,8 @@ def logoutView(request):
     return redirect('home')
 # class Report(TemplateView):
 #     template_name = 'report.html'
+
+
 @login_required # restrict this page to authenticated users
 def report(request):
     """the report page and its logic is here"""
@@ -168,7 +170,21 @@ def generateDetails(request, id):
 
     return render(request, 'generateDetails.html', context)
 
+
+@login_required
 def evidence(request, id):
-    child = Report.objects.get(id=id)
-    context = {"child":child}
-    return render(request, 'evidence.html', context)
+    
+    if request.method == "POST":
+        first_name = request.POST.get('first_name')
+        last_name = request.POST.get('last_name')
+        child_name = request.POST.get('child_name')
+        description = request.POST.get('description')
+        location = request.POST.get('location')
+        date = request.POST.get('date')
+        contact = request.POST.get('contact')
+        child_photo = request.FILES.get('child_photo')
+
+        newEvidence = Evidence(first_name=first_name, last_name=last_name, child_name=child_name, description=description, location=location,\
+                               date=date, contact=contact, child_photo=child_photo)
+        newEvidence.save()
+    return render(request, 'evidence.html')

@@ -1,0 +1,5 @@
+.notification-container {
+    border: 1px solid #f7b662;
+    display: flex;
+    justify-content: center;
+}

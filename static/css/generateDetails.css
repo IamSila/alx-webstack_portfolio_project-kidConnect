@@ -62,3 +62,7 @@ body {
     text-decoration: none;
     color: black;
 }
+
+.alerts {
+    border: 1px solid #e0a800;
+}

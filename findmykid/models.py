@@ -24,8 +24,12 @@ class Report(models.Model):
 class Evidence(models.Model):
     first_name = models.CharField(max_length=256)
     last_name = models.CharField(max_length=256)
+    child_name = models.CharField(max_length=256, default='John Doe')
     description = models.TextField()
     location = models.CharField(max_length=256)
     date = models.DateField()
     contact = models.IntegerField()
     child_photo = models.ImageField(upload_to='media/evidence')
+
+    def __str__(self):
+        return f"{self.child_name}"
