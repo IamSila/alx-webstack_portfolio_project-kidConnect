@@ -7,15 +7,28 @@
         
 
         <div class="notification-container">
-            <div class="notification">
-                <p>reporter name:</p>
-                <p>child name</p>
-                <p>name of child</p>
-                <p>Location</p>
-                <p>Full description</p>
+            {% if evidences %}
+                <div class="notification">
+                    <p>reporter name: {{evidences.first_name}}</p>
+                    <p>child name: {{evidences.last_name}}</p>
+                    <p>name of child: {{evidences.child_firstName}}</p>
+                    <p>Location: {{evidences.location}}</p>
+                    <p>Full description: {{evidences.description}}</p>
+
+            
+                </div>
+                <div class="check">
+                    <a href=""><p>This is my child</p></a>
+                </div>
                 
-                <a href="">Yes, this is my child</a>
-            </div>
+            {% else %}
+                <div class="no-notification">
+                    <p>Sorry, there is nothing posted about this child.</p>
+                </div>
+            {% endif %}
+                
+                  
+           
         </div>
 
     

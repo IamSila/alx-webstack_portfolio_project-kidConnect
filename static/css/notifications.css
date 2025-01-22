@@ -2,12 +2,13 @@
     border: 1px solid #f7b662;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 
 .notification {
     border: 2px solid #f7b662;
-    background: linear-gradient(rgba(100,100,100,0.1), rgba(0,0,0,0.1));
+    background: black;
     margin: 20px;
     border-radius: 5px;
 
@@ -15,10 +16,27 @@
 
 
 .notification-container > .notification > p {
-    background-color: blue;
-    color: white;
-    border: 1px solid blue;
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid whitesmoke;
     margin: 10px;
     border-radius: 5px;
 
+}
+
+.notification-container > .notification > p:hover {
+    transform: scale(1.01);
+    background-color: #ffc107;
+
+}
+
+.notification-container > .no-notification {
+    display: flex;
+    justify-content: center;
+}
+
+
+.no-notification > p {
+    font: 20px;
+    font-weight: bold;
 }

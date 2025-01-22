@@ -191,4 +191,8 @@ def evidence(request, id):
 
 
 def notifications(request, id):
-    return render(request, 'notifications.html')
+    children = Report.objects.get(id=id)
+    evidences = Evidence.objects.get(child_firstName=children.firstName)
+    
+    context = {'evidences': evidences, 'children':children}
+    return render(request, 'notifications.html', context)
