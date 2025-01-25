@@ -105,7 +105,7 @@ Make sure to follow the project's code of conduct.
 
 ## Authors
 - [Sila](https://github.com/IamSila "Sila Mulingi")
-- [Ndegwadavid](https://github.com/Sylvia-254 "Sylvia Cheptoo")
+- [Sylvia-254](https://github.com/Sylvia-254 "Sylvia Cheptoo")
 
 ## ToDo
 - make the UI/UX more pleasing.
