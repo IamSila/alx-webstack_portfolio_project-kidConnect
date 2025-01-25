@@ -59,7 +59,7 @@ We host this application here: [kidConnect](https://comingsoon.com). Visit and c
 **NOTE:**  For testing the website locally then;
 Create a superuser ```python manage.py createsuperuser``` and login to management
 
-http://localhost:8000/management
+http://localhost:8000/customAdmin/
 
 # Installation
 1. For linux:
@@ -88,8 +88,6 @@ python manage.py runserver
 ```
 2. Open your web browser and navigate to http://127.0.0.1:8000.
 3. Sign up for an account on the platform.
-4. Create your own questions and quizzes or answer existing ones.
-5. Track your progress and see how your knowledge expands over time.
 
 ## Technologies Used
 - Django: A high-level Python web framework that provides a clean and efficient way to build web applications.
