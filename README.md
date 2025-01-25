@@ -3,12 +3,55 @@
 Welcome to this reporting system. Report your lost child via the website and track down any notifications through the notifications button linked to the child profile..
 
 ## Features
-- **Peer Engagement**: Students can engage with their peers by adding questions and quizzes to the platform.
-- **Interactive Quizzes**: The user-friendly interface allows students to create and share interactive quizzes.
-- **Collaborative Learning**: The platform fosters a collaborative learning environment, where students can learn from each other's questions and quizzes.
-- **Customizable Learning Experience**: With a wide range of subjects and topics to choose from, students can customize their learning experience.
-- **Enhanced Understanding**: By participating in the platform, students can enhance their understanding of various subjects.
-- **Leaderboard**: Track top performers.
+**1. User-Friendly Interface**
+
+    Simple, easy-to-navigate design suitable for children and adults with minimal tech knowledge.
+    Clear icons and labels for different categories of reports.
+
+**2. Anonymity and Privacy**
+
+    Option to report anonymously to ensure safety for the user.
+    Encryption for all communications to protect the privacy of the user and the reported information.
+
+**3. Multiple Report Categories**
+
+    Categories to choose from (e.g., physical abuse, emotional abuse, neglect, bullying, unsafe environments).
+    Option for the user to provide detailed information about the incident.
+
+**4. Incident Report Form**
+
+    A structured form to collect the relevant information, such as:
+        Who is involved
+        Date, time, and location of the incident
+        Type of abuse/incident
+        Any witnesses
+        Detailed description of the situation
+    Ability to upload photos or videos as evidence (if necessary).
+
+**5. Language Support**
+
+    Multiple language options to ensure accessibility for diverse populations.
+    Kid-friendly language to guide younger users through the process.
+
+**6. Location and Context Awareness**
+
+    Option to include GPS location or school/work address (if relevant) for the report.
+    If reporting in emergency situations, a feature to alert local authorities.
+
+**7. Live Chat or Helpline Integration**
+
+    Access to live chat with a counselor or trusted adult.
+    Integration with a helpline number (e.g., national child abuse hotline) for immediate assistance.
+
+**8. Educational Resources**
+
+    Section with educational materials for children and parents on what constitutes abuse, safety tips, and what to do if they are in danger.
+    Videos, quizzes, or FAQs to help children better understand the reporting process.
+
+**9. Automatic Follow-Up Reminders**
+
+    Notification system to remind users to check in or follow up with authorities, counselors, or support groups.
+    Option for users to receive updates on the progress of their report, if applicable.
 
 # Overview
 We host this application here: [kidConnect](https://comingsoon.com). Visit and check this out.
